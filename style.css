@@ -1,0 +1,145 @@
+.transition
+{
+    width: 100px;
+    height: 100px;
+    background: rgb(101, 195, 226);
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+.transition:hover
+{
+    width: 300px;
+}
+.translate
+{
+    width:80px;
+    height:80px;
+    background-color: cornflowerblue;
+    animation:myanimation 2s ease 1s infinite alternate-reverse;
+}
+@keyframes myanimation 
+{
+    from
+    {
+        transform: translate(0px);
+    }    
+    to
+    {
+        transform:translate(100px)
+    }
+}
+.rotate
+{
+    width: 80px;
+    height: 80px;
+    margin: 40px;
+    background-color: rgb(247, 133, 34);
+    border: 2px solid grey;
+    animation: myanimation1 2s ease 1s infinite alternate-reverse;
+}
+@keyframes myanimation1
+{
+    from
+    {
+        transform:rotate(0deg)
+    }
+    to
+    {
+        transform:rotatey(360deg)
+    }
+}
+.scale
+{
+    width:80px;
+    height: 80px;
+    background-color: lawngreen;
+    position: relative;
+    left: 40px;
+    animation:myanimation2 2s linear 1s infinite alternate-reverse;
+}
+@keyframes myanimation2
+{
+    0%
+    {
+        transform:scale(1.0);
+    }
+    100%
+    {
+        transform: scale(2.0);
+    }
+}
+.skew
+{
+    width: 80px;
+    height: 80px;
+    background-color:rgb(156, 156, 216);
+    animation: myanimation3 2s linear 1s infinite alternate-reverse;
+}
+@keyframes myanimation3
+{
+    from
+    {   
+        transform: skewy(20deg)
+    }
+    to
+    {
+        transform:skewy(-20deg)
+    }
+}
+.container
+{
+    display: grid;
+    grid-template-columns: 200px 50px 100px;
+    grid-template-rows: 50px 50px;
+    grid-gap: 5px;
+    text-align: center;
+}
+.item
+{
+    background-color:pink;
+    border: 1px solid palevioletred;
+}
+.item1
+{
+    grid-column: 1/3;
+}
+.item3
+{
+    grid-row:2/4;
+}
+.item4
+{
+    grid-column: 2/4;
+}
+.descendant p
+{
+    color: blue;
+    font-family: 'Times New Roman';
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.child p
+{
+    color: blue;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.h2+p
+[
+    color: blue;
+    font-family: sans-serif;
+    font-weight: bold;
+]
+.button~p
+{
+    color: blue;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+table,th,td
+{
+    border: 2px solid black;
+    border-collapse: collapse;
+}

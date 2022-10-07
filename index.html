@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h2>1.Show implementation of CSS transitions.</h2>
+        <p>
+            The transition-property specifies the CSS properties to which you want the transition effect.
+            Only these CSS properties are animated.
+        </p>
+        <div class="transition"></div>
+    </section>
+    <section>
+        <h2>2.Show implementation of CSS transform.</h2>
+        <p>
+            CSS transforms are a collection of functions that allow to shape elements in particular ways:
+        </p>
+        <ul>
+            <li><b>translate:</b> moves the element along up to 3 axis (x, y and z)</li>
+            <li><b>rotate:</b> moves the element around a central point.</li>
+            <li><b>scale:</b> resizes the element</li>
+            <li><b>skew:</b> distorts the element</li>
+        </ul>
+        <b>translate</b> <br>  <br>
+        <div class="translate"></div> <br>
+        <b>rotate</b>
+        <div class="rotate"></div> 
+        <b>scale</b> <br> <br> <br> <br>
+        <div class="scale"></div> <br> <br><br>
+        <b>skew</b> <br> <br> <br>
+        <div class="skew"></div> <br>
+    </section>
+    <section>
+        <h2>3.Show implementation of Grid.</h2>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+    </section>
+    <section>
+        <h2>4.What are CSS Combinators?</h2>
+        <p>
+            Combinators combine the selectors to provide them a useful relationship and the position of content in 
+            the document. This comes in handy when you want to style certain elements all at once rather than styling
+            elements individually. CSS combinator selectors are as follows.
+        </p>
+        <ol type="1">
+            <li>Descendant Selector (space)</li>
+            <li>Child Selector (>)</li>
+            <li>Adjacent Sibling Selector (+)</li>
+            <li>General Sibling Selector (~)</li>
+        </ol>
+        <b>Descendant Selector :</b> The descendant selector matches all elements that are descendants of a specified
+           element.
+        <div class="descendant">
+            <h2>Hello World!</h2>
+            <p>I am child paragraph</p>
+            <p>I am child paragraph</p>
+        </div>
+        <b>Child Selector :</b>The child selector will only affect elements under a direct parent. A good way to 
+        remember this is that a child will only listen to its direct parents.
+        <div class="child">
+            <h2>This heading is a direct child of the div tag.</h2>
+            <p>So is this paragraph tag.</p>
+            <button>
+                <p>This paragraph tag is NOT a direct child of the first div</p>
+            </button>
+            <p>This paragraph tag is also a child of the div tag</p>
+        </div>
+        <b>Adjacent Sibling Selector :</b>To use the adjacent sibling selector in your CSS stylesheet, you simply 
+        need the plus (+) sign. The adjacent sibling selector is used to select an element that is directly after 
+        another specific element.
+        <div class="adjacent">
+            <h2>This is a H2 tag.</h2>
+            <p>This p tag immediately follows the heading.</p>
+            <button>
+                <p>This p tag is NOT immediately following a H2 tag.</p>
+            </button>
+            <h2 class="h2">Howdy! This is another H2 tag.</h2>
+            <p>This p tag is after another H2 tag and gets formatted.</p>
+        </div>
+        <b>General Sibling Selectors :</b>The general sibling selector follows through on all elements under the 
+        targeted HTML element selected. This means that if another element tag interrupts the direct adjacent flow, 
+        the style rules can still follow through.
+        <div class="general">
+            <h2>I am heading tag!</h2>
+            <p>I am paragraph tag 1.</p>
+            <button class="button">
+                <p>I am a paragraph tag inside a button!</p>
+            </button>
+            <p>I am paragraph tag 2.</p>
+            <p>I am paragraph tag 3.</p>
+            <h3>I am another heading tag!</h3>
+            <p>I am paragraph tag 4.</p>
+        </div>
+    </section>
+    <section>
+        <h2>5.What are CSS Pseudo Selectors?</h2>
+        <p>
+            CSS pseudo-classes are used to add styles to selectors, but only when those selectors meet certain 
+            conditions. A pseudo class is expressed by adding a colon (:) after a selector in CSS, followed by a 
+            pseudo-class such as "hover", "focus", or "active",
+        </p>
+        <table>
+            <tr>
+                <th>:active</th>
+                <td>It is used to add style to an active element.</td>
+            </tr>
+            <tr>
+                <th>:hover</th>
+                <td>It adds special effects to an element when the user moves the mouse pointer over the element.</td>
+            </tr>
+            <tr>
+                <th>:link</th>
+                <td>It adds style to the unvisited link.</td>
+            </tr>
+            <tr>
+                <th>:visited</th>
+                <td>It adds style to a visited link.</td>
+            </tr>
+            <tr>
+                <th>:lang</th>
+                <td>It is used to define a language to use in a specified element.</td>
+            </tr>
+            <tr>
+                <th>:focus</th>
+                <td>It selects the element which is focused by the user currently.</td>
+            </tr>
+            <tr>
+                <th>:first-child</th>
+                <td>It adds special effects to an element, which is the first child of another element.</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
